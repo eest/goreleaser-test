@@ -1,0 +1,15 @@
+version: 2
+
+builds:
+  - goos:
+    - linux
+
+kos:
+  - repositories: [ghcr.io/eest/goreleaser-test]
+    tags:
+      - "{{.Version}}"
+      - latest
+    bare: true
+    platforms:
+      - linux/amd64
+      - linux/arm64
