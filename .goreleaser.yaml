@@ -3,6 +3,7 @@ version: 2
 builds:
   - goos:
     - linux
+    - darwin
 
 kos:
   - repositories: [ghcr.io/eest/goreleaser-test]
